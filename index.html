@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Suresh Kumar Ravi</title>
+  <title>Suresh Kumar Ravi - C++ Resume</title>
   <style>
     body {
       margin: 0;
@@ -12,12 +12,14 @@
       display: grid;
       grid-template-columns: 300px 1fr;
       height: 100vh;
+      overflow: hidden;
     }
 
     .left {
       background-color: #161b22;
       padding: 20px;
       border-right: 1px solid #30363d;
+      overflow-y: auto;
     }
 
     .left img {
@@ -44,15 +46,17 @@
     }
 
     .right {
-      padding: 30px;
-      overflow-y: scroll;
+      padding: 30px 40px;
+      overflow-y: auto;
+      font-size: 15px;
+      line-height: 1.7;
     }
 
     .comment { color: #8b949e; }
-    .keyword { color: #ff7b72; }
+    .keyword { color: #ff7b72; font-weight: bold; }
     .string { color: #a5d6ff; }
     .number { color: #d2a8ff; }
-    .type { color: #7ee787; }
+    .type { color: #7ee787; font-weight: bold; }
 
     a {
       color: #79c0ff;
@@ -61,6 +65,11 @@
 
     a:hover {
       text-decoration: underline;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
     }
 
     ::-webkit-scrollbar {
@@ -73,11 +82,12 @@
   </style>
 </head>
 <body>
+
   <!-- Left Panel -->
   <div class="left">
     <img src="suresh_profile.jpg" alt="Suresh Kumar Ravi" />
     
-    <h2>Core Competencies</h2>
+    <h2>Key Skills</h2>
     <ul>
       <li>C++, Object-Oriented</li>
       <li>Multithreading, Embedded Linux</li>
@@ -88,7 +98,7 @@
     <h2>Languages</h2>
     <ul>
       <li>English – Fluent</li>
-      <li>C++ - Fluent </li>
+      <li>C++ - Fluent</li>li
       <li>Tamil – Native</li>
     </ul>
 
@@ -100,72 +110,63 @@
 
   <!-- Right Panel -->
   <div class="right">
-    <p class="comment">// C++ Developer Resume Header File</p>
-    <p class="comment">/* Actively looking for C++ roles in embedded or system-level development */</p>
+    <pre><span class="comment">// Resume: Suresh Kumar Ravi</span>
+<span class="comment">/* C++ Developer | Embedded Systems | 12+ years experience */</span>
 
-    <p><span class="keyword">#pragma once</span></p>
+<span class="keyword">#include</span> <span class="string">&lt;string&gt;</span>
+<span class="keyword">#include</span> <span class="string">&lt;array&gt;</span>
 
-    <p><span class="keyword">#include</span> <span class="string">&lt;string&gt;</span></p>
-    <p><span class="keyword">#include</span> <span class="string">&lt;array&gt;</span></p>
+<span class="keyword">enum class</span> Platform { Linux, RTOS, Windows };
+<span class="keyword">enum class</span> Language { Cpp, C, Python, Bash };
+<span class="keyword">enum class</span> Tool { GDB, GCC, CMake, Git, Jira, Qt };
 
-    <br>
+<span class="keyword">struct</span> PersonalInfo {
+    <span class="type">std::string</span> name = <span class="string">"Suresh Kumar Ravi"</span>;
+    <span class="type">std::string</span> title = <span class="string">"Senior C++ Embedded Software Developer"</span>;
+    <span class="type">std::string</span> email = <span class="string">"your.email@example.com"</span>;
+    <span class="type">std::string</span> location = <span class="string">"Toronto, ON"</span>;
+    <span class="type">bool</span> canadianPR = <span class="keyword">true</span>;
+    <span class="type">int</span> experienceYears = <span class="number">12</span>;
+};
 
-    <span class="keyword">enum class</span> Platform { Linux, RTOS, Windows };<br>
-    <span class="keyword">enum class</span> Language { Cpp, C, Python, Bash };<br>
-    <span class="keyword">enum class</span> Tool { GDB, GCC, CMake, Git, Jira, Qt };
+<span class="keyword">class</span> Education {
+<span class="keyword">public</span>:
+    <span class="type">std::string</span> university = <span class="string">"National University of Singapore"</span>;
+    <span class="type">std::string</span> degree = <span class="string">"Master’s in Electrical & Computer Engineering"</span>;
+};
 
-    <br><br>
+<span class="keyword">struct</span> Experience {
+    <span class="type">std::string</span> company;
+    <span class="type">std::string</span> role;
+    <span class="type">std::string</span> duration;
+    <span class="type">std::string</span> description;
+};
 
-    <span class="keyword">struct</span> PersonalInfo {<br>
-    &nbsp;&nbsp;<span class="type">std::string</span> name = <span class="string">"Suresh Kumar Ravi"</span>;<br>
-    &nbsp;&nbsp;<span class="type">std::string</span> title = <span class="string">"Senior C++ Embedded Software Developer"</span>;<br>
-    &nbsp;&nbsp;<span class="type">std::string</span> email = <span class="string">"your.email@example.com"</span>;<br>
-    &nbsp;&nbsp;<span class="type">std::string</span> location = <span class="string">"Toronto, Canada"</span>;<br>
-    &nbsp;&nbsp;<span class="type">bool</span> canadianPR = <span class="keyword">true</span>;<br>
-    &nbsp;&nbsp;<span class="type">int</span> experienceYears = <span class="number">12</span>;<br>
+<span class="type">std::array&lt;Experience, 2&gt;</span> experiences = {
+    Experience {
+        <span class="string">"HP Inc Singapore"</span>,
+        <span class="string">"Senior Embedded Software Developer"</span>,
+        <span class="string">"2014 - 2022"</span>,
+        <span class="string">"Firmware development for printers; C++, real-time systems, RTOS, debugging, optimization."</span>
+    },
+    Experience {
+        <span class="string">"Christie Digital"</span>,
+        <span class="string">"C++ Developer – Intermediate Media Block"</span>,
+        <span class="string">"2022 - 2025"</span>,
+        <span class="string">"Handled subtitle decryption & delivery pipeline; multithreading model; audio-video sync in embedded Linux."</span>
+    }
+};
+
+<span class="keyword">struct</span> Traits {
+    <span class="type">std::array&lt;std::string, 4&gt;</span> values = {
+        <span class="string">"Analytical"</span>,
+        <span class="string">"Problem Solver"</span>,
+        <span class="string">"Team Player"</span>,
+        <span class="string">"Self-driven"</span>
     };
-
-    <br>
-
-    <span class="keyword">class</span> Education {<br>
-    &nbsp;&nbsp;<span class="keyword">public</span>:<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="type">std::string</span> degree = <span class="string">"Master's in Electrical & Computer Engineering"</span>;<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="type">std::string</span> university = <span class="string">"National University of Singapore"</span>;<br>
-    };
-
-    <br>
-
-    <span class="keyword">struct</span> Experience {<br>
-    &nbsp;&nbsp;<span class="type">std::string</span> company;<br>
-    &nbsp;&nbsp;<span class="type">std::string</span> role;<br>
-    &nbsp;&nbsp;<span class="type">std::string</span> duration;<br>
-    &nbsp;&nbsp;<span class="type">std::string</span> description;<br>
-    };
-
-    <br>
-
-    <span class="type">std::array&lt;Experience, 2&gt;</span> experiences = {<br>
-    &nbsp;&nbsp;Experience{<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"HP Inc Singapore"</span>, <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Senior Embedded Software Developer"</span>,<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"2014 - 2022"</span>,<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Developed firmware for multifunction printers with focus on embedded systems and performance."</span><br>
-    &nbsp;&nbsp;},<br>
-    &nbsp;&nbsp;Experience{<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Christie Digital Innovations ULC"</span>, <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Advanced Product Developer Software"</span>,<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"2022 - 2025"</span>,<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Implemented subtitle decryption, image rendering pipeline, and delivery over embedded Linux."</span><br>
-    &nbsp;&nbsp;}<br>
-    };
-
-    <br>
-
-    <span class="keyword">struct</span> Traits {<br>
-    &nbsp;&nbsp;<span class="type">std::array&lt;std::string, 4&gt;</span> values = {<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Analytical"</span>, <span class="string">"Problem Solver"</span>, <span class="string">"Team Player"</span>, <span class="string">"Self-driven"</span><br>
-    &nbsp;&nbsp;};<br>
-    };
+};
+</pre>
   </div>
+
 </body>
 </html>
