@@ -1,73 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Suresh Kumar Ravi - C++ Embedded Resume</title>
+  <meta charset="UTF-8">
+  <title>Suresh Kumar Ravi - C++ Resume</title>
   <style>
     body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
       background-color: #0d1117;
       color: #c9d1d9;
-      font-family: 'Courier New', monospace;
-      padding: 40px;
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      height: 100vh;
     }
-    h1, h2 {
+
+    .left {
+      background-color: #161b22;
+      padding: 20px;
+      border-right: 1px solid #30363d;
+    }
+
+    .left img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .left h2 {
       color: #58a6ff;
+      font-size: 18px;
+      margin-top: 20px;
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 5px;
     }
+
+    .left ul {
+      list-style: none;
+      padding-left: 10px;
+    }
+
+    .left li {
+      margin-bottom: 6px;
+    }
+
+    .right {
+      padding: 30px;
+      overflow-y: scroll;
+    }
+
     .comment { color: #8b949e; }
     .keyword { color: #ff7b72; }
     .string { color: #a5d6ff; }
     .number { color: #d2a8ff; }
     .type { color: #7ee787; }
+
+    a {
+      color: #79c0ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #30363d;
+    }
   </style>
 </head>
 <body>
-  <p class="comment">// C++ Developer Resume Styled as Code</p>
+  <!-- Left Panel -->
+  <div class="left">
+    <img src="your-photo.jpg" alt="Suresh Kumar Ravi" />
+    
+    <h2>Key Skills</h2>
+    <ul>
+      <li>C++, C (Embedded)</li>
+      <li>Multithreading, RTOS</li>
+      <li>Linux, Debugging (GDB)</li>
+      <li>Qt, Python, Bash</li>
+      <li>Git, CMake, Jira</li>
+    </ul>
 
-  <p class="comment">/// <summary></p>
-  <p class="comment">/// Actively seeking C++ development roles (embedded or application-level).</p>
-  <p class="comment">/// 12+ years of experience. Canadian PR. Based in Toronto. Ready to join immediately.</p>
-  <p class="comment">/// </summary></p>
+    <h2>Languages</h2>
+    <ul>
+      <li>English – Fluent</li>
+      <li>Tamil – Native</li>
+    </ul>
 
-  <p><span class="keyword">public class</span> <span class="type">Information</span> {</p>
-  <p>&nbsp;&nbsp;<span class="keyword">public string</span> Name = <span class="string">"Suresh Kumar Ravi"</span>;</p>
-  <p>&nbsp;&nbsp;<span class="keyword">public string</span> Title = <span class="string">"Senior C++ Embedded Software Developer"</span>;</p>
-  <p>&nbsp;&nbsp;<span class="keyword">public string</span> Email = <span class="string">"your.email@example.com"</span>;</p>
-  <p>&nbsp;&nbsp;<span class="keyword">public string</span> Location = <span class="string">"Toronto, ON, Canada"</span>;</p>
-  <p>&nbsp;&nbsp;<span class="keyword">public bool</span> CanadianPR = <span class="keyword">true</span>;</p>
-  <p>&nbsp;&nbsp;<span class="keyword">public int</span> ExperienceYears = <span class="number">12</span>;</p>
-  <p>}</p>
+    <h2>Links</h2>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/sureshkumarravi/">LinkedIn</a></li>
+      <li><a href="https://github.com/YourUsername">GitHub</a></li>
+    </ul>
+  </div>
 
-  <p><span class="keyword">public enum</span> Platforms { Linux, RTOS, Windows }</p>
-  <p><span class="keyword">public enum</span> Languages { C++, C, Python, Bash }</p>
-  <p><span class="keyword">public enum</span> Tools { GDB, GCC, CMake, Git, Jira, Qt }</p>
+  <!-- Right Panel -->
+  <div class="right">
+    <p class="comment">// C++ Developer Resume Styled as Code</p>
 
-  <p><span class="keyword">public class</span> <span class="type">Education</span> {</p>
-  <p>&nbsp;&nbsp;<span class="comment">// National University of Singapore</span></p>
-  <p>&nbsp;&nbsp;<span class="keyword">public string</span> Degree = <span class="string">"Master's in Electrical & Computer Engineering"</span>;</p>
-  <p>}</p>
+    <p class="comment">/// <summary></p>
+    <p class="comment">/// Actively seeking C++ development roles (embedded or application-level).</p>
+    <p class="comment">/// 12+ years of experience. Canadian PR. Based in Toronto. Ready to join immediately.</p>
+    <p class="comment">/// </summary></p>
 
-  <p><span class="keyword">public class</span> <span class="type">Experience</span> {</p>
-  <p>&nbsp;&nbsp;<span class="keyword">public void</span> HP_Inc() {</p>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Role: Senior Embedded Developer (2014–2022)</span></p>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Developed firmware for multi-function printers, focused on real-time systems.</span></p>
-  <p>&nbsp;&nbsp;}</p>
+    <p><span class="keyword">public class</span> <span class="type">Information</span> {</p>
+    <p>&nbsp;&nbsp;<span class="keyword">public string</span> Name = <span class="string">"Suresh Kumar Ravi"</span>;</p>
+    <p>&nbsp;&nbsp;<span class="keyword">public string</span> Title = <span class="string">"Senior C++ Embedded Software Developer"</span>;</p>
+    <p>&nbsp;&nbsp;<span class="keyword">public string</span> Email = <span class="string">"your.email@example.com"</span>;</p>
+    <p>&nbsp;&nbsp;<span class="keyword">public string</span> Location = <span class="string">"Toronto, ON, Canada"</span>;</p>
+    <p>&nbsp;&nbsp;<span class="keyword">public bool</span> CanadianPR = <span class="keyword">true</span>;</p>
+    <p>&nbsp;&nbsp;<span class="keyword">public int</span> ExperienceYears = <span class="number">12</span>;</p>
+    <p>}</p>
 
-  <p>&nbsp;&nbsp;<span class="keyword">public void</span> ChristieDigital() {</p>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Role: Embedded C++ Developer (2022–2025)</span></p>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Worked on Intermediate Media Block: subtitle decryption/rendering, audio pipeline integration.</span></p>
-  <p>&nbsp;&nbsp;}</p>
-  <p>}</p>
+    <p><span class="keyword">public enum</span> Platforms { Linux, RTOS, Windows }</p>
+    <p><span class="keyword">public enum</span> Languages { C++, C, Python, Bash }</p>
+    <p><span class="keyword">public enum</span> Tools { GDB, GCC, CMake, Git, Jira, Qt }</p>
 
-  <p><span class="keyword">public class</span> <span class="type">Profile</span> {</p>
-  <p>&nbsp;&nbsp;<span class="keyword">public string[]</span> Traits = { <span class="string">"Analytical"</span>, <span class="string">"Meticulous"</span>, <span class="string">"Team Player"</span>, <span class="string">"Self-driven"</span> };</p>
-  <p>}</p>
+    <p><span class="keyword">public class</span> <span class="type">Education</span> {</p>
+    <p>&nbsp;&nbsp;<span class="comment">// National University of Singapore</span></p>
+    <p>&nbsp;&nbsp;<span class="keyword">public string</span> Degree = <span class="string">"Master's in Electrical & Computer Engineering"</span>;</p>
+    <p>}</p>
 
-  <p><span class="comment">// Online presence</span></p>
-  <p><span class="keyword">public static class</span> Links {</p>
-  <p>&nbsp;&nbsp;<span class="keyword">public const string</span> LinkedIn = <span class="string">"https://www.linkedin.com/in/sureshkumarravi/"</span>;</p>
-  <p>&nbsp;&nbsp;<span class="keyword">public const string</span> GitHub = <span class="string">"https://github.com/YourUsername"</span>;</p>
-  <p>}</p>
+    <p><span class="keyword">public class</span> <span class="type">Experience</span> {</p>
+    <p>&nbsp;&nbsp;<span class="keyword">public void</span> HP_Inc() {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Role: Senior Embedded Developer (2014–2022)</span></p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Developed firmware for multi-function printers, focused on real-time systems.</span></p>
+    <p>&nbsp;&nbsp;}</p>
 
-  <p><span class="comment">// Availability: Immediate</span></p>
+    <p>&nbsp;&nbsp;<span class="keyword">public void</span> ChristieDigital() {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Role: Embedded C++ Developer (2022–2025)</span></p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Worked on Intermediate Media Block: subtitle decryption/rendering, audio pipeline integration.</span></p>
+    <p>&nbsp;&nbsp;}</p>
+    <p>}</p>
+
+    <p><span class="keyword">public class</span> <span class="type">Profile</span> {</p>
+    <p>&nbsp;&nbsp;<span class="keyword">public string[]</span> Traits = { <span class="string">"Analytical"</span>, <span class="string">"Meticulous"</span>, <span class="string">"Team Player"</span>, <span class="string">"Self-driven"</span> };</p>
+    <p>}</p>
+  </div>
 </body>
 </html>
